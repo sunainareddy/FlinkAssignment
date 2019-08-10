@@ -6,15 +6,15 @@ Software Pre-Requisites
 
 How to Run the Solution?
 -------------------------
-STEP_1: Download the source code
-STEP_2: Open Solution File 
-STEP_3: Right click on solution and select "Restore NuGet Packages"
-STEP_4: Right Click on Solution and Build
-STEP_5: Right click on "FlinksDemo" Project and select "Set as Startup project"
-STEP_6: Run the Application
-STEP_7: On the UI Select FlinksCapital and enter userid and password as shown below the signin button
-STEP_8: Enter the answer as shown below submit button
-STEP_9: Wait for the Expected results on the UI
+1. Download the source code
+2. Open Solution File 
+3. Right click on solution and select "Restore NuGet Packages"
+4. Right Click on Solution and Build
+5. Right click on "FlinksDemo" Project and select "Set as Startup project"
+6. Run the Application
+7. On the UI Select FlinksCapital and enter userid and password as shown below the signin button
+8. Enter the answer as shown below submit button
+9. Wait for the Expected results on the UI
 
 NOTE: Make a note of LoginID from the Browser Console
 
