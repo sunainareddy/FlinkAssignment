@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <p id="testResult"></p>
+</div>
+
+
+
+<!-- Flinks Connect -->
+<iframe class="flinksconnect" height="760" scrolling="no"
+        src="https://toolbox-iframe.private.fin.ag/?theme=light&desktopLayout=true&institutionFilterEnable=true&demo=true&innerRedirect=false&consentEnable=true"></iframe>
+
+<style type="text/css">
+
+    .flinksconnect {
+        width: 100%;
+    }
+</style>
+<!-- Event Listener -->
+@section scripts{
+    <script>
+        var uri = '@Url.Action("GetCustomerData", "Home")';
+        console.log(uri);
+        window.addEventListener('message', function (e) {
+            if (e.data != null && e.data.step != null && e.data.step.toLowerCase() === 'redirect') {
+                console.log("Login Id", e.data.loginId);
+                $.ajax({
+                    type: "Get",
+                    url: uri+'?id='+ e.data.loginId,
+                    success: function (ex) {
+                        $("#testResult").text(ex);
+                    }
+                    
+                });
+            }
+        });
+    </script>
+}
