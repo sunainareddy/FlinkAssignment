@@ -18,6 +18,7 @@ STEP_9: Wait for the Expected results on the UI
 
 NOTE: Make a note of LoginID from the Browser Console
 
+
 How to Run Test Cases?
 -------------------------
 1. Update LoginId in test project(FlinksDemo.Tests)(i.e. the one you took a note previously)- incase if login id expires
